@@ -21,6 +21,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
+            android:id="@+id/curp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="Curp"
+            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
+        <TextView
             android:id="@+id/nom"
             android:layout_width="match_parent"
             android:layout_height="41dp"
@@ -42,13 +49,6 @@
             android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
 
         <TextView
-            android:id="@+id/born"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:text="Born"
-            android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
-
-        <TextView
             android:id="@+id/entidad"
             android:layout_width="match_parent"
             android:layout_height="41dp"
@@ -56,10 +56,12 @@
             android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
 
         <TextView
-            android:id="@+id/curp"
+            android:id="@+id/born"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:text="Curp"
+            android:layout_weight="1"
+            android:text="Born"
             android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
+
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

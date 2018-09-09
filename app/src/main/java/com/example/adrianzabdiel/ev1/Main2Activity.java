@@ -28,7 +28,21 @@ public class Main2Activity extends AppCompatActivity {
             TextView state= (TextView)findViewById(R.id.entidad);
             state.setText(usuario.state);
         }
-
-
+        TextView Retroceder;
+        Retroceder = (TextView) findViewById(R.id.Return);
+        Retroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        TextView Salir;
+        Salir = (TextView) findViewById(R.id.finish);
+        Retroceder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
 }
