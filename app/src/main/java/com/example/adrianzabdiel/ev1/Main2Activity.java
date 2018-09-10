@@ -2,6 +2,7 @@ package com.example.adrianzabdiel.ev1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
 
@@ -130,7 +131,6 @@ public class Main2Activity extends AppCompatActivity {
             if (entidad="Zacatecas"){
             code="ZA";
         }
-
             if(sex="Hombre"){
             curp = ("H" + code);
             };
@@ -138,21 +138,36 @@ public class Main2Activity extends AppCompatActivity {
             curp = ("M" + code);
             };
         }
+
+        protected void onCreate(Bundle savedInstanceState){
+            super.onCreate(savedInstanceState);
+        }
+        public void salir(View view){
+            finish();
+        }
+        public boolean onCreateOptionsMenu(Menu menu) {
+            getMenuInflater().inflate(R.menu.menu,menu);
+            return true;
+
+        }
+
+        public boolean onCreateItemSelected(MenuItem opcion_menu) {
+            int opcion = opcion_menu.getItemId();
+
+            if(opcion == R.id.Return) {
+                return true;
+            }
+
+            return super.onOptionsItemSelected(opcion_menu);
+        }
+
         TextView Retroceder;
         Retroceder = (TextView) findViewById(R.id.Return);
         Retroceder.setOnClickListener(new View.OnClickListener() {
-            @Override
             public void onClick(View v) {
                 onBackPressed();
             }
         });
-        TextView Salir;
-        Salir = (TextView) findViewById(R.id.finish);
-        Salir.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
     }
 }
