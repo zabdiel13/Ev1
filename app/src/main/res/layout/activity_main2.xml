@@ -24,7 +24,6 @@
             android:id="@+id/curp"
             android:layout_width="match_parent"
             android:layout_height="44dp"
-            android:text="Curp"
             android:textAppearance="@android:style/TextAppearance.Widget.TextView" />
 
         <TextView

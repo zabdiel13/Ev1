@@ -29,12 +29,12 @@ public class Main2Activity extends AppCompatActivity {
             TextView state= (TextView)findViewById(R.id.entidad);
             state.setText(usuario.state);
 
+            TextView fn=(TextView)findViewById(R.id.born);
+            fn.toString();
             TextView entidad=(TextView)findViewById(R.id.entidad);
-            TextView curp= (TextView)findViewById(R.id.curp);
-            curp.toString();
+            String curp = null;
             TextView sex= (TextView)findViewById(R.id.genre);
-            sex.toString();
-            String code;
+            String code = null;
 
         if(entidad.toString() =="Aguascalientes"){
             code = "AG";
@@ -128,44 +128,15 @@ public class Main2Activity extends AppCompatActivity {
         }
             if (entidad.toString() =="Zacatecas"){
             code="ZA";
+
         }
             if(sex.toString() =="Hombre"){
-            curp = ("H" + code);
+                curp = (fn +"H" + code);
             };
             if(sex.toString() =="Mujer"){
-            curp = ("M" + code);
+                curp = (fn +"M" + code);
             };
         }
-
-        protected void onCreate(Bundle savedInstanceState){
-            super.onCreate(savedInstanceState);
-        }
-        public void salir(View view){
-            finish();
-        }
-        public boolean onCreateOptionsMenu(Menu menu) {
-            getMenuInflater().inflate(R.menu.menu,menu);
-            return true;
-
-        }
-
-        public boolean onCreateItemSelected(MenuItem opcion_menu) {
-            int opcion = opcion_menu.getItemId();
-
-            if(opcion == R.id.Return) {
-                return true;
-            }
-
-            return super.onOptionsItemSelected(opcion_menu);
-        }
-
-        TextView Retroceder;
-        Retroceder = (TextView) findViewById(R.id.Return);
-        Retroceder.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
 
     }
 }
