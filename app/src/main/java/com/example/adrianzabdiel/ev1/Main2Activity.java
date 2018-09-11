@@ -144,21 +144,6 @@ public class Main2Activity extends AppCompatActivity {
             }
         }
 
-        ImageView regresar=(ImageView) findViewById(R.id.Return);
-        regresar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-        ImageView finish=(ImageView) findViewById(R.id.finish);
-        finish.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
-
 
         }
 
