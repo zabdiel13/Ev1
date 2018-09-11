@@ -30,111 +30,109 @@ public class Main2Activity extends AppCompatActivity {
             state.setText(usuario.state);
 
             TextView entidad=(TextView)findViewById(R.id.entidad);
-            entidad.toString();
             TextView curp= (TextView)findViewById(R.id.curp);
             curp.toString();
             TextView sex= (TextView)findViewById(R.id.genre);
             sex.toString();
-            curp.toString();
             String code;
 
-        if(entidad="Aguascalientes"){
+        if(entidad.toString() =="Aguascalientes"){
             code = "AG";
         }
-        if(entidad="Baja California"){
+        if(entidad.toString() =="Baja California"){
              code="BC";
             }
-        if(entidad="Baja California Sur"){
+        if(entidad.toString() =="Baja California Sur"){
               code="BS";
             }
-        if (entidad="Campeche"){
+        if (entidad.toString() =="Campeche"){
            code="CM";
         }
-            if (entidad="Chiapas"){
+            if (entidad.toString() =="Chiapas"){
             code="CS";
         }
-            if (entidad="Chihuahua"){
+            if (entidad.toString() =="Chihuahua"){
            code="CH";
         }
-            if (entidad="Cd Mexico"){
+            if (entidad.toString() =="Cd Mexico"){
             code="CX";
         }
-            if (entidad="Cohahuila"){
+            if (entidad.toString() =="Cohahuila"){
             code="CD";
         }
-            if (entidad ="Durango"){
+            if (entidad.toString() =="Durango"){
             code="DG";
         }
-            if (entidad="Guanajuato"){
+            if (entidad.toString() =="Guanajuato"){
             code="GT";
         }
-            if (entidad="Guerrero"){
+            if (entidad.toString() =="Guerrero"){
             code="GR";
         }
-            if (entidad="Hidalgo"){
+            if (entidad.toString() =="Hidalgo"){
             code="HG";
         }
-            if (entidad="Jalisco"){
+            if (entidad.toString() =="Jalisco"){
             code="JC";
         }
-            if (entidad="Mexico"){
+            if (entidad.toString() =="Mexico"){
             code="MC";
         }
-            if (entidad="Michoacane"){
+            if (entidad.toString() =="Michoacane"){
             code="MN";
         }
-            if (entidad="Morelos"){
+            if (entidad.toString() =="Morelos"){
             code="MO";
         }
-            if (entidad="Nayarit"){
+            if (entidad.toString() =="Nayarit"){
             code="NA";
         }
-            if (entidad="Nuevo Leon"){
+            if (entidad.toString() =="Nuevo Leon"){
             code="NL";
         }
-            if (entidad="Oaxaca"){
+            if (entidad.toString() =="Oaxaca"){
             code="OA";
         }
-            if (entidad="Puebla"){
+            if (entidad.toString() =="Puebla"){
             code="PU";
         }
-            if (entidad="Queretaro"){
+            if (entidad.toString() =="Queretaro"){
             code="QT";
         }
-            if (entidad="Quintana Roo"){
+            if (entidad.toString() =="Quintana Roo"){
             code="QR";
         }
-            if (entidad="San Luis"){
+            if (entidad.toString() =="San Luis"){
             code="SL";
         }
-            if (entidad="Sinaloa"){
+            if (entidad.toString() =="Sinaloa"){
             code="SI";
         }
-            if (entidad="Sonora"){
+            if (entidad.toString() =="Sonora"){
             code="SO";
         }
-            if (entidad="Tabasco"){
+            if (entidad.toString() =="Tabasco"){
             code="TB";
         }
-            if (entidad="Tamaulipas"){
+            if (entidad.toString() =="Tamaulipas"){
             code="TM";
         }
-            if (entidad="Tlaxcala"){
+            if (entidad.toString() =="Tlaxcala"){
             code="TL";
         }
-            if (entidad="Veracruz"){
+            if (entidad.toString() =="Veracruz"){
             code="VE";
         }
-            if (entidad="Yucatan"){
+            if (entidad.toString() =="Yucatan"){
             code="YU";
         }
-            if (entidad="Zacatecas"){
+            if (entidad.toString() =="Zacatecas"){
             code="ZA";
         }
-            if(sex="Hombre"){
+            if(sex.toString() =="Hombre"){
             curp = ("H" + code);
             };
-            if(sex="Mujer"){
+            if(sex.toString() =="Mujer"){
             curp = ("M" + code);
             };
         }
