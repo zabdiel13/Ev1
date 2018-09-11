@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Main2Activity extends AppCompatActivity {
@@ -33,6 +34,7 @@ public class Main2Activity extends AppCompatActivity {
             fn.toString();
             TextView entidad=(TextView)findViewById(R.id.entidad);
             String curp = null;
+            String curp2 = null;
             TextView sex= (TextView)findViewById(R.id.genre);
             String code = null;
 
@@ -131,12 +133,34 @@ public class Main2Activity extends AppCompatActivity {
 
         }
             if(sex.toString() =="Hombre"){
-                curp = (fn +"H" + code);
-            };
+                curp = ("SATA"+fn +"H" + code);
+                TextView curp1=(TextView) findViewById(R.id.curp);
+                curp1.setText(curp);
+            }
             if(sex.toString() =="Mujer"){
-                curp = (fn +"M" + code);
-            };
+                curp2 = ("SATA"+fn +"M" + code);
+                TextView curp1=(TextView) findViewById(R.id.curp);
+                curp1.setText(curp2);
+            }
+        }
+
+        ImageView regresar=(ImageView) findViewById(R.id.Return);
+        regresar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+        ImageView finish=(ImageView) findViewById(R.id.finish);
+        finish.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+
         }
 
     }
-}
+

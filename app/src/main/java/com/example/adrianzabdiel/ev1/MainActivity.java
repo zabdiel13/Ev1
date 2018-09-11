@@ -9,6 +9,7 @@ import android.os.Parcelable;
 import android.view.View;
 import android.content.Intent;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.content.Intent;
 import android.widget.AdapterView;
@@ -17,7 +18,6 @@ import android.widget.Spinner;
 import android.widget.Toast;
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,31 +42,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        public void salir(View view){
-            finish();
-        }
-
-        public boolean onCreateOptionsMenu(Menu menu) {
-
-            getMenuInflater().inflate(R.menu.menu,menu);
-        }
-
-        public boolean onOptionsItemSelected (MenuItem mi) {
-            int opcion = mi.getItemId();
-
-            if(opcion == R.id.Return) {
-                return true;
-            }
-
-            return super.onOptionsItemSelected(mi);
-        }
-
-        TextView Retroceder;
-        Retroceder = (TextView) findViewById(R.id.Return);
-        Retroceder.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
     }
 }
+//ImageView regresar=(ImageView) findViewById(R.id.Return);
+//        regresar.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                onBackPressed();
+//            }
+//        });
