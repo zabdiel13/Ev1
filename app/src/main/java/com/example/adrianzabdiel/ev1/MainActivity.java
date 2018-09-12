@@ -43,11 +43,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+    public void salir(View view){
+        finish();
+    }
+    public boolean onCreateOptionMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+    public boolean onCreateItemSelected(MenuItem opcion){
+        int mi = opcion.getItemId();
+        if (mi == R.id.finish);
+        salir(null);
+        return true;
+    }
 }
-//ImageView regresar=(ImageView) findViewById(R.id.Return);
-//        regresar.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                onBackPressed();
-//            }
-//        });
